@@ -1,0 +1,77 @@
+fieldset {
+  box-sizing: border-box;
+  border: 2px solid gray;
+  padding: 16px;
+  /* min-width: 200px;
+    max-width: auto; */
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+label{
+  display: block;
+  margin-top: 1em;
+}
+
+input {
+  border-radius: 5px;
+  border: 2px solid lightgray;
+  padding: 0.3rem;
+}
+
+
+
+
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline-block;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#submit {
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #04aa6d;
+}
+
+.password {
+  position: relative;
+}
+.icon-password {
+  position: absolute;
+  right: 217px;
+  top: 24px;
+}
+
+.strengh span {
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+}
+.gray {
+  background-color: gray;
+}
+.orange {
+  background-color: orange;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+
+@media screen and (min-width: 430px) {
+  fieldset {
+    width: 32%;
+    min-width: 400px;
+  }
+}
+
+

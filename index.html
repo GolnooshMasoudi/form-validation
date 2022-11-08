@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <!--label,  input (text, radio, checkbox, date, color), select(single, multi) , textarea, button-->
+      <form>
+        <fieldset>
+          <legend>Contact Form</legend>
+
+          <div>
+            <label for="firstname" class="label">FirstName : </label>
+
+            <input
+              type="text"
+              name="firtname"
+              id="firstname"
+              placeholder="Please enter your first name..." 
+            />
+
+
+            <div id="error-firstname"></div>
+          </div>
+
+          <div>
+            <label for="lastname" class="label">LastName : </label>
+            <input
+              type=""
+              name="lastname"
+              class="lname"
+              id="lastname"
+            />
+            <div id="error-lastname"></div>
+          </div>
+
+          <div>
+            <label for="phone" class="label" >Phone Number : </label>
+            <input type="tel" name="phone" id="phone"  />
+            <div id="error-phone"></div>
+          </div>
+
+          <div>
+            <label for="email" class="label">Email : </label>
+            <input type="text" name="email" id="email"  />
+            <div id="error-email"></div>
+          </div>
+
+          <div class="password">
+            <label for="password" class="label">Password : </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              
+              value = ""/>   
+             <span id = "message" style="color:red">
+              
+            
+            <i disabled class="fa fa-eye icon-password"></i>
+            <!-- fa-eye-slash -->
+          </div>
+
+          <div class="strengh">
+            <span class="gray"></span>
+            <span class="gray"></span>
+            <span class="red"></span>
+            <span class="orange"></span>
+            <span class="green"></span>
+          </div>
+
+          <div class="gender">
+            <label for="gender" class="label">Gender : </label>
+            <input type="radio" name="gender" value="Male" id="radio1" />
+            <label for="gender" class="label">Male </label>
+            <input type="radio" name="gender" value="Female" id="radio2" />
+            <label for="gender" class="label">Female </label>
+            <input type="radio" name="gender" value="They" id="radio3" />
+            <label for="gender" class="label">No Gender</label>
+            <div id="error-gender"></div>
+          </div>
+
+          <div class="skill">
+            <label for="skill" class="label">Skills : </label>
+            <input type="checkbox" name="skill" value="HTML" />
+            <label for="skill" class="label">HTML </label>
+            <input type="checkbox" name="skill" value="CSS" />
+            <label for="skill" class="label">CSS </label>
+            <input type="checkbox" name="skill" value="JavaScript" />
+            <label for="skill" class="label">JavaScript </label>
+            <input type="checkbox" name="skill" value="React" />
+            <label for="skill" class="label">React </label><br /><br />
+            <div id="error-skill"></div>
+          </div>
+
+          <div class="agree-terms">
+            <input type="checkbox" name="terms" checked />
+            <label for="terms" class="label"
+              >Agree with all the terms and conditions </label
+            ><br /><br />
+          </div>
+
+          <div>
+            <label for="role">Role</label>
+            <select class="type-user" name="role" id="role">
+              <option value="default">Please select a role ...</option>
+              <option value="student">student</option>
+              <option value="teacher">teacher</option>
+              <option value="admin">admin</option>
+            </select>
+          </div>
+          <br />
+          <textarea name="description" id="" cols="30" rows="10"></textarea>
+
+          <div>
+            <button type="reset">Clear Form</button>
+            <button id="submit" type="submit" name="signup-btn">SignUp</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
