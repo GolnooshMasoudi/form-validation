@@ -31,12 +31,17 @@ document.getElementById("submit").addEventListener("click", function (event) {
   if (!isAtleastCheckInputChecked()) {
     event.preventDefault();
   } else {
-    console.log("Flase");
+    console.log("true");
   }
   if (!validateForm()) {
     event.preventDefault();
   } else {
-    console.log("Flase");
+    console.log("true");
+  }
+  if (!verifyRole()) {
+    event.preventDefault();
+  } else {
+    console.log("done");
   }
 });
 
@@ -203,5 +208,15 @@ function validateForm(e) {
     //form is not valid
     document.getElementById("error-skill").innerHTML =
       "**You should at least select one skill";
+  }
+}
+
+function verifyRole() {
+  let select = document.getElementById("role");
+
+  if (select.tagName === "SELECT") {
+    return false;
+  } else {
+    return true;
   }
 }
